@@ -1,5 +1,27 @@
 import { UserComplexResp, UserSPR, UserLogger } from "../src/single-responsibility";
 import { Weapon, Character, Sword, Crossbow, Knife, CharacterOCP } from "../src/open-close";
+import { Database, MySqlDatabase, MongoDatabase  } from "../src/liskov";
+
+test("liskov", () => {
+
+	const db = new Database();
+	db.connect();
+	const res = db.joinTable();
+	expect(res).toEqual(true);
+
+	const dbSql = new MySqlDatabase();
+	dbSql.connect();
+	const res1 = dbSql.joinTable();
+	expect(res1).toEqual(true);
+
+	// Fill fail!!!
+	//const dbMongo = new MongoDatabase();
+	//dbMongo.connect();
+	//const res2 = dbMongo.joinTable();
+	//expect(res2).toEqual(true);
+
+});
+
 
 test("open-close", () => {
 

@@ -5,6 +5,7 @@ export { UserComplexResp, UserSPR, UserLogger };
 
 const GenerateId = () => Date.now() * Math.random();
 
+////////////////////////////////
 // Wrong
 class UserComplexResp {
 	id: number;
@@ -27,7 +28,7 @@ class UserComplexResp {
 	}
 }
 
-
+////////////////////////////////
 // Correct
 class UserSPR {
 	id: number;
