@@ -5,9 +5,9 @@ It allows programmers to write code that is easier to understand and change late
 Solid is often used with systems that use an object-oriented design.
 
 
-**S** Single-responsiblity Principle: Class has one job to do. Each change in requirements can be done by changing just one class.
+**S** Single-responsiblity Principle(SPR): Class has one job to do. Each change in requirements can be done by changing just one class.
 
-**O** Open-closed Principle: Objects or entities should be open for extension but closed for modification.
+**O** Open-closed Principle(OCP): Objects or entities should be open for extension but closed for modification.
 
 **L** Liskov Substitution Principle: Class can be replaced by any of its children. Children classes inherit parent's behaviours.
 
